@@ -1,0 +1,43 @@
+ // import statement
+ @import './theme';
+ /* You can add global styles to this file, and also import other style files */
+
+ html,
+ body {
+     height: 100%;
+ }
+
+ body {
+     margin: 0;
+     font-family: Roboto, "Helvetica Neue", sans-serif;
+ }
+
+ .blue {
+     color: #2296F3
+ }
+
+ .green {
+     color: green;
+ }
+
+ .attribution-link {
+     text-decoration: none;
+     color: red;
+ }
+
+ .attribution-link:hover {
+     text-decoration: underline;
+ }
+
+ .card-title-icon {
+     text-align: center;
+ }
+
+ .card-title-icon,
+ mat-icon {
+     font-size: 72px;
+ }
+
+ .align-center {
+     text-align: center;
+ }

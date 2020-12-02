@@ -1,0 +1,56 @@
+<div fxLayout="column" class="page-container">
+
+    <!-- navigation -->
+    <nav fxFlex>
+        <mat-toolbar class="toolbar" color="accent">
+            <mat-toolbar-row>
+                <!-- navbar container -->
+                <div class="navbar-container">
+                    <div fxLayout="row">
+                        <div class="nav nav-pills nav-justified">
+                            <button class="navbar-link" routerLink="/" mat-button style="margin-top: 6px;">Home</button>
+                            <button class="navbar-link" routerLink="/about" mat-button>About Me</button>
+                            <button class="navbar-link" routerLink="/contact" mat-button>Contact</button>
+
+
+                        </div>
+                        <!-- end of navigation for home about contact-->
+
+                        <div fxLayout="row-reverse" width="250px">
+
+                            <div class="nav nav-pills nav-justified">
+
+                                <button class="navbar-link" routerLink="/diagrams">Diagrams</button>
+                                <button class="navbar-link" routerLink="/data-structure">Data-Structure</button>
+
+                            </div>
+
+                            <!-- logo -->
+
+                            <div>
+                                <button mat-button class="logo" style="padding-left: 220px;">
+                <img src="./assets/bobsLogo.png" />
+                <h2 class="center-name">Joann Saeou's Personal Portfolio</h2>
+              </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </mat-toolbar-row>
+        </mat-toolbar>
+    </nav>
+
+    <!-- second navigation panel here-->
+
+
+
+
+    <!-- main content -->
+    <div fxFlex>
+        <main class="main-content" fxFlex="100%;">
+            <router-outlet></router-outlet>
+        </main>
+    </div>
+</div>
