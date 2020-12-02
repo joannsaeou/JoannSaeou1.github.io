@@ -3,7 +3,7 @@
     "version": 1,
     "newProjectRoot": "projects",
     "projects": {
-        "JoannSaeou": {
+        "JoannSaeou1.github.io": {
             "projectType": "application",
             "schematics": {},
             "root": "",
@@ -13,7 +13,7 @@
                 "build": {
                     "builder": "@angular-devkit/build-angular:browser",
                     "options": {
-                        "outputPath": "dist/JoannSaeou",
+                        "outputPath": "dist/JoannSaeou1.github.io",
                         "index": "src/index.html",
                         "main": "src/main.ts",
                         "polyfills": "src/polyfills.ts",
@@ -60,18 +60,18 @@
                 "serve": {
                     "builder": "@angular-devkit/build-angular:dev-server",
                     "options": {
-                        "browserTarget": "JoannSaeou:build"
+                        "browserTarget": "JoannSaeou1.github.io:build"
                     },
                     "configurations": {
                         "production": {
-                            "browserTarget": "JoannSaeou:build:production"
+                            "browserTarget": "JoannSaeou1.github.io:build:production"
                         }
                     }
                 },
                 "extract-i18n": {
                     "builder": "@angular-devkit/build-angular:extract-i18n",
                     "options": {
-                        "browserTarget": "JoannSaeou:build"
+                        "browserTarget": "JoannSaeou1.github.io:build"
                     }
                 },
                 "test": {
@@ -109,16 +109,16 @@
                     "builder": "@angular-devkit/build-angular:protractor",
                     "options": {
                         "protractorConfig": "e2e/protractor.conf.js",
-                        "devServerTarget": "JoannSaeou:serve"
+                        "devServerTarget": "JoannSaeou1.github.io:serve"
                     },
                     "configurations": {
                         "production": {
-                            "devServerTarget": "JoannSaeou:serve:production"
+                            "devServerTarget": "JoannSaeou1.github.io:serve:production"
                         }
                     }
                 }
             }
         }
     },
-    "defaultProject": "JoannSaeou"
+    "defaultProject": "JoannSaeou1.github.io"
 }
