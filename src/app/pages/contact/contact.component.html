@@ -1,29 +1,89 @@
-<!-- form goes here -->
-<form>
-    <!-- name -->
-    <div class="field">
-        <input type="text" name="name" class="input" placeholder="Your Name" [(ngModel)]="name" required minlength="3" #nameInput="ngModel">
-        <div class="help is-error" *ngIf="nameInput.invalid && nameInput.dirty">
-            Name is required and needs to be at least 3 characters long.
+<div>
+    <div fxLayout="row">
+      <div  fxFlex>
+        <h1>Who We Are</h1>
+        <div class="normal-p">
+
+  <p> Feel free to contact me at your earliest convenient</p>
+
+  <br/>
+  
+
+  <details>
+    <summary>Warning</summary>
+    <p>I will not speak with any scammers/spam callers. </p>
+  </details>
+
+  <br/>
+  <br/>
         </div>
+      </div>
     </div>
+  <!-- Create the layout for the contact info. -->
+    <div fxLayout="row" style="padding-bottom: 5%">
+  
+ 
+      <!-- Layout for the Phone Number Column -->
+      <div fxFlex>
+        <mat-card class="mat-elevation-z0 mat-card-color">
+          <mat-card-title class="card-title-icon">
+            <mat-icon color="primary" inline=true>contact_phone</mat-icon>
+            <mat-card-subtitle>Social Media:</mat-card-subtitle>
+          </mat-card-title>
+          <br />
+  
+          <mat-card-content class="align-center">
+            <p>
+              
+              <br/>
+              <br/>
+              <mat-card-subtitle class="card-title-icon"> 
+              <a href="https://www.linkedin.com/in/joann-saeou-6b82b0197/" class="fa fa-linkedin"></a>
+<p> Linkedin</p>
+            </mat-card-subtitle>
 
-    <!-- email -->
-    <div class="field">
-        <input type="email" name="email" class="input" placeholder="Your Email" [(ngModel)]="email" required email #emailInput="ngModel">
-        <div class="help is-error" *ngIf="emailInput.invalid && emailInput.dirty">
-            Needs to be a valid email.
-        </div>
+<mat-card-subtitle> 
+                <p>  
+              <a href="https://www.instagram.com/tingybuu/" class="fa fa-instagram"></a>
+            </p>
+            <p> instagram</p>
+        </mat-card-subtitle>
+
+   
+          
+          </mat-card-content>
+        </mat-card>
+      </div>
+      <!-- Layout for the eMail Address Column -->
+      <div fxFlex>
+        <mat-card class="mat-elevation-z0 mat-card-color">
+          <mat-card-title class="card-title-icon">
+            <mat-icon color="primary" inline=true>email</mat-icon>
+            <mat-card-subtitle> email </mat-card-subtitle>
+          </mat-card-title>
+          <br />
+  
+          <mat-card-content class="align-center" >
+         
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            
+            <br/>
+                <p>
+                    <a href="mailto: joannssaeou@gmail.com"> 
+                        <img border="1px" float="top" alt="email" src="assets/Gmail-logo.png" width="100" height="100">  </a>
+                </p>
+
+
+           
+          </mat-card-content>
+        </mat-card>
+      </div>
     </div>
-
-    <!-- message -->
-    <div class="field">
-        <textarea class="textarea" name="message" placeholder="What's on your mind?" [(ngModel)]="message" required #messageInput="ngModel"></textarea>
-        <div class="help is-error" *ngIf="emailInput.invalid && emailInput.dirty">
-            Your message is required!
-        </div>
-    </div>
-
-    <button type="submit" class="button is-danger is-large">Submit</button>
-
-</form>
+  </div>
