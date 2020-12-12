@@ -11,9 +11,9 @@ import { BaseLayoutComponent } from './shared/base-layout/base-layout.component'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
-// imports material
+// importing  design framework from Angular  material
 
-import {MatTabsModule} from '@angular/material/tabs';
+import {MatTab, MatTabsModule} from '@angular/material/tabs';
 import {MatCard, MatCardModule} from '@angular/material/card';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { MatListModule } from '@angular/material/list';
@@ -27,6 +27,12 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { DiagramsComponent } from './pages/diagrams/diagrams.component';
 import { DataStructureComponent } from './pages/data-structure/data-structure.component';
 import { FormsModule } from '@angular/forms';
+import { DetailDialogComponent } from './pages/detail-dialog/detail-dialog.component';
+import { MatDialog, MatDialogModule } from '@angular/material/dialog';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatInputModule } from '@angular/material/input';
+import { MatTableModule } from '@angular/material/table';
+import { CommentboxComponent } from './pages/commentbox/commentbox.component';
 
 
 
@@ -52,7 +58,9 @@ import { FormsModule } from '@angular/forms';
     BaseLayoutComponent,
     AuthLayoutComponent,
     DiagramsComponent,
-    DataStructureComponent
+    DataStructureComponent,
+    DetailDialogComponent,
+    CommentboxComponent
 
 
   ],
@@ -71,7 +79,13 @@ import { FormsModule } from '@angular/forms';
     MatButtonModule,
     MatMenuModule,
     FlexLayoutModule,
-    FormsModule
+    FormsModule,
+    MatDialogModule,
+    MatProgressSpinnerModule,
+    MatInputModule,
+    MatDialogModule,
+    MatTableModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
