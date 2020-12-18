@@ -1,4 +1,4 @@
-<div fxLayout="column" class="page-container">
+<div fxLayout="column" class="page-container icon-vespa">
 
     <!-- main  navigation -->
     <nav fxFlex>
@@ -8,37 +8,36 @@
                 <div class="navbar-container">
                     <div fxLayout="row">
                         <div class="nav nav-pills nav-justified">
-                            <button class="navbar-link" routerLink="/" mat-button style="margin-top: 6px;">Home</button>
-                            <button class="navbar-link" routerLink="/about" mat-button>About Me</button>
-                            <button class="navbar-link" routerLink="/contact" mat-button>Contact</button>
-
+                            <button class="navbar-link" routerLink="/" mat-button style="margin-top: 6px;"> <img src="/assets/home.png"> </button> &nbsp;
+                            <button class="navbar-link" routerLink="/about" mat-button> <img src="/assets/book.png"></button> &nbsp;
+                            <button class="navbar-link" routerLink="/contact" mat-button><img src="/assets/mail.png"></button> 
+                            <button class="logo" mat-button>logo here </button>
 
                         </div>
                         <!-- end of 1st navigation panel  for home about contact-->
 
                         <!-- 2nd nav bar -->
-                        <div fxLayout="row-reverse" width="250px">
+                        <!-- <div fxLayout="row-reverse" width="250px">
 
                             <div class="nav nav-pills nav-justified">
 
                                 <button class="navbar-link" routerLink="/diagrams">Presentations</button>
                                 <button class="navbar-link" routerLink="/data-structure">Data-Structure</button>
 
-                            </div>
+                            </div> -->
 
                             <!-- logo -->
 
-                            <div>
-                                <button mat-button class="logo" style="padding-left: 220px;">
-                <img src="./assets/bobsLogo.png" />
-                <h2 class="center-name">Joann Saeou's Personal Portfolio</h2>
-              </button>
-                            </div>
-                            <!-- end of logo -->
+
+
+
+
+
+
 
                         </div> <!-- 2nd nav bar closing tag-->
                     </div>
-                </div>
+              
 
             </mat-toolbar-row>
         </mat-toolbar>
@@ -46,13 +45,24 @@
 
     <!-- second navigation panel here-->
 
+    <div fxLayout class="footer"> 
+
+        <mat-toolbar-row> 
+
+    <footer>
+  <p>Made with <strong>♥</strong> by Joann Saeou © portfolio. All rights reserved.<br> </p>
+</footer>
+
+</mat-toolbar-row>
+</div>
 
 
 
-    <!-- main content -->
+
+<!--  main content -->
     <div fxFlex>
         <main class="main-content" fxFlex="100%;">
             <router-outlet></router-outlet>
         </main>
     </div>
-</div>
+

@@ -1,0 +1,24 @@
+
+ html,
+ body {
+     height: 100%;
+     margin: 0;
+     font-family: Roboto, "Helvetica Neue", sans-serif;
+   
+ }
+
+.blue {
+    border: 1px solid black;
+    margin: 37px;
+    padding: 50px;
+    color: #838ed2 bold;
+    font-family: 'Langar', cursive;
+    background-position:center;
+    background-image: url(https://media.giphy.com/media/6uu3ZNNgRBt61eZ1Zh/giphy.gif);
+}
+
+
+p {
+    font-family: 'Langar', cursive;
+
+}

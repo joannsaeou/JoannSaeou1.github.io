@@ -13,7 +13,7 @@
 .main-content {
     padding-left: 30px;
     height: 100%;
-    overflow-y: auto;
+    overflow-y: none;
 }
 
 .footer {
@@ -55,7 +55,7 @@
 }
 
 .page-container {
-    flex: 1 0 auto;
+    flex: 1 0 none;
 }
 
 .logo {
@@ -65,5 +65,16 @@
 .main-container {
     padding-top: 25px;
     width: 80%;
-    margin: 0 auto;
+    margin: 0 none;
 }
+
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: whitesmoke;
+    color: black;
+    text-align: center;
+ }

@@ -3,8 +3,7 @@
  * Import statements
  */
 import { Component } from '@angular/core';
-/*app.component.ts*/
-//var CanvasJS = require('./canvasjs.min');
+
 
 /**
  * Export component
