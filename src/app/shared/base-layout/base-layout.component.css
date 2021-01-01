@@ -68,6 +68,7 @@
     margin: 0 none;
 }
 
+/* Footer */
 
 .footer {
     position: fixed;
@@ -77,4 +78,21 @@
     background-color: whitesmoke;
     color: black;
     text-align: center;
+    padding: 20px;
  }
+
+
+/* Header/logo Title */
+.header {
+    padding: 80px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+  }
+
+
+  /* Increase the font size of the heading */
+.header h1 {
+    font-size: 40px;
+  }
+  

@@ -10,41 +10,42 @@ import { DataStructureComponent } from './pages/data-structure/data-structure.co
 
 
 const routes: Routes = [
-  {
+ {
+  path: '',
+  component: BaseLayoutComponent,
+  children: [
+   {
     path: '',
-    component: BaseLayoutComponent,
-    children: [
-      {
-        path: '',
-        component: HomeComponent
-      },
-      {
-        path: 'home',
-        component: HomeComponent
-      },
-      {
-        path: 'about',
-        component: AboutComponent
-      },
-      {
-        path: 'contact',
-        component: ContactComponent
-      },
-      {
-        path: 'diagrams',
-        component: DiagramsComponent
-      },
-      {
-        path: 'data-structure',
-        component: DataStructureComponent
-      }
+    component: HomeComponent
+   },
+   {
+    path: 'home',
+    component: HomeComponent
+   },
+   {
+    path: 'about',
+    component: AboutComponent
+   },
+   {
+    path: 'contact',
+    component: ContactComponent
+   },
+   {
+    path: 'diagrams',
+    component: DiagramsComponent
+   },
+   {
+    path: 'data-structure',
+    component: DataStructureComponent
+   }
 
-    ]},
-  ];
+  ]
+ },
+];
 
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+ imports: [RouterModule.forRoot(routes)],
+ exports: [RouterModule]
 })
 export class AppRoutingModule { }
